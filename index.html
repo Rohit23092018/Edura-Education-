@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Edura Education</title>
+  </head>
+  <body class="body">
+    <div class="alert alert-success" id="alertSuccess">
+      Message sent successfully.
+    </div>
+    <div class="alert alert-fail" id="alertDanger"></div>
+    <!-- Navbar -->
+    <nav class="container navbar-container" id="navbar">
+      <div class="navbar">
+        <a href="/" class="navbar-logo">
+          <img src="images/logo.png" alt="Logo" class="navbar-logo" />
+        </a>
+        <div class="navbar-links">
+          <a class="navbar-text navbar-link" href="index.html">Home</a> 
+          <a class="navbar-text navbar-link" href="#spotlight">Features</a>
+          <a class="navbar-text navbar-link" href="#contact-us">Contact Us</a>
+          <a class="navbar-text navbar-link" href="../Edura/faq/faq.html">FAQ</a>
+          <a class="navbar-text navbar-link" href="../Edura/colleges/colleges.html">Colleges</a>
+        </div>
+        <a href="#download-now" class="navbar-button">Get Started</a>
+        <button class="navbar-hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+      <div class="navbar-links-hamburger" id="nav-links-hamburger">
+        <a
+        class="navbar-text navbar-link navbar-hamburger-link"
+        href="#"
+        >Home</a
+      >
+        <a
+          class="navbar-text navbar-link navbar-hamburger-link"
+          href="#spotlight"
+          >Features</a
+        >
+        <a
+          class="navbar-text navbar-link navbar-hamburger-link"
+          href="#contact-us"
+          >Contact Us</a
+        >
+        <a class="navbar-text navbar-link navbar-hamburger-link" href="faq/faq.html"
+          >FAQ</a
+        >
+        <a
+        class="navbar-text navbar-link navbar-hamburger-link"
+        href="#colleges"
+        >Colleges</a
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <img src="./images/hero1.png" alt="hero" class="hero-img" />
+      <div class="hero-box"></div>
+      <div class="hero-container">
+        <h1 class="hero-h1">Your Gateway to Top Colleges in India Begin in Bangalore!</h1>
+        <p class="hero-p">
+          We provide admission support for all colleges in Bangalore and across India.
+Our expert team offers top-notch counseling and mock interviews for Bangalore colleges.
+        </p>
+        <div class="hero-button-container">
+          <a class="navbar-text navbar-link hero-button" href="#contact-us">
+           
+            <img
+              src="./images/phone.png"
+              alt="appstore"
+              class="contactus-img"
+            />
+            Contact Us
+          </a>
+          <a
+            href="https://interviewshalaindia.myinstamojo.com"
+            target="_blank"
+            class="hero-button"
+          >
+            <img src="./images/mocktest.png" alt="appstore" class="mocktest-img" />
+            Mock Interview
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Spotlight -->
+    <section class="spotlight" id="spotlight">
+      <h1 class="features-h1">Top Colleges in Bangalore</h1>
+      <div class="container spotlight-container">
+        <!-- Features -->
+        <div class="features">
+          <div class="feature">
+            <img src="./images/pes.png" alt="" class="features-icons" />
+            <!--<div>
+              <h1 class="features-h1">3M+</h1>
+              <p class="features-p">Users</p>
+            </div>-->
+          </div>
+          <div class="feature">
+            <img src="./images/ramaiah.png" alt="" class="features-icons" />
+            <!--<div>
+              <h1 class="features-h1">3M+</h1>
+              <p class="features-p">Users</p>
+            </div>-->
+          </div>
+          <div class="feature">
+            <img src="./images/dsa.png" alt="" class="features-icons" />
+            <!--<div>
+              <h1 class="features-h1">3M+</h1>
+              <p class="features-p">Users</p>
+            </div>-->
+          </div>
+          
+          <!--<hr class="feature-hr">-->
+          <div class="feature">
+            <img src="./images/rv.png" class="features-icons" alt="" />
+            <!--<div>
+              <h1 class="features-h1">90+</h1>
+              <p class="features-p">Locations</p>
+            </div>-->
+          </div>
+          <!--<hr class="feature-hr">-->
+          <div class="feature">
+            <img src="./images/bmsce.jpeg" class="features-icons" alt="" />
+            <!--<div class="feature-text">
+              <h1 class="features-h1">100+</h1>
+              <p class="features-p">Servers</p>
+            </div>-->
+          </div>
+        </div>
+        <!-- Services -->
+        <div class="services-container">
+          <div class="services">
+            <h1 class="features-h1">
+              Features
+            </h1>
+            <div class="services-box-container">
+              <div class="services-box">
+                <img src="./images/admission.png" class="services-icon" alt="" />
+                <p class="services-p">
+                  Direct Admission
+                </p>
+              </div>
+              <div class="services-box">
+                <img src="./images/mock.png" class="services-icon" alt="" />
+                <p class="services-p">
+                  Mock Interview
+                </p>
+              </div>
+              <div class="services-box">
+                <img src="./images/counselling.png" class="services-icon" alt="" />
+                <p class="services-p">
+                  Free counseling
+                </p>
+              </div>
+              <div class="services-box">
+                <img src="./images/certifications.png" class="services-icon" alt="" />
+                <p class="services-p">Certifications</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Animation-->
+    <h1 class="features-h1">The journey to college starts with one step </h1><br>
+    <p class="animationp">We're here to guide you at every step of your college journey.</p><br><br>
+    <div class="feature">
+      <div class="admissionProcessSteps_admissionProcessWrap__p86G4">
+        <!--<img alt="Admission Process" loading="lazy" width="1100" height="40" decoding="async" data-nimg="1" style="color: transparent" srcset="https://nj1-static.collegedekho.com/_next/static/media/admission-process-new.fdb7fefa.gif?width=1200&amp;q=80 1x, https://nj1-static.collegedekho.com/_next/static/media/admission-process-new.fdb7fefa.gif?width=3840&amp;q=80 2x" src="https://nj1-static.collegedekho.com/_next/static/media/admission-process-new.fdb7fefa.gif?width=3840&amp;q=80">-->
+        <img src="images/animation2.gif" alt="animation.gif" width="1000" height="250">
+      </div> 
+    </div>
+    
+
+    <!-- What's New -->
+    <section class="what-new" id="what-new">
+      <div class="container what-new-container">
+        <div class="what-new-container">
+          <img
+            src="./images/whats_new.png"
+            alt=""
+            width="450px"
+            height="382px"
+            class="what-new-img"
+          />
+          <div class="what-new-content">
+            <h1 class="what-new-h1">What’s new</h1>
+            <ul class="what-new-ul">
+              <li class="what-new-li">
+                <img
+                    src="./images/tick.png"
+                    alt=""
+                    width="22px"
+                    height="22px" /> <span> 1-on-1 Personalized Counselling Sessions. </span>
+              </li>
+              <li class="what-new-li">
+                <img
+                    src="./images/tick.png"
+                    alt=""
+                    width="22px"
+                    height="22px" /> <span> Top College Tie-Ups in Bangalore. </span>
+              </li>
+              <li class="what-new-li">
+                <img
+                    src="./images/tick.png"
+                    alt=""
+                    width="22px"
+                    height="22px" />
+                    <span>Take online Mock Interview. </span>
+              </li>
+              <li class="what-new-li">
+                <img
+                    src="./images/tick.png"
+                    alt=""
+                    width="22px"
+                    height="22px" />
+                    <span> Instant Call Back & Chat Support. </span>
+              </li>
+              <li class="what-new-li">
+                <img
+                    src="./images/tick.png"
+                    alt=""
+                    width="22px"
+                    height="22px" />
+                    <span>  New Scholarship & Loan Guidance. </span>
+              </li>
+              <li class="what-new-li">
+                <img
+                    src="./images/tick.png"
+                    alt=""
+                    width="22px"
+                    height="22px" />
+                    <span>  Offline & Online Counselling Centers. </span>
+              </li>
+              <!--<a href="#download-now" class="download-link"><button class="btn download-now-btn">DOWNLOAD NOW !</button></a>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Map -->
+    <!--<section class="map">
+      <div class="container">
+        <h1 class="map-h1">Huge global network of fast VPN</h1>
+        <p class="map-p">Boost Streaming enhances viewing experience</p>
+        <div class="map-img">
+          <img src="./images/map.png" alt="" />
+        </div>
+      </div>
+    </section>-->
+
+    <section class="hero">
+      <img src="./images/banner.png" alt="hero" class="hero-img" />
+      <!--<div class="hero-box"></div>
+      <div class="hero-container">
+        <h1 class="hero-h1">Your Gateway to Top Colleges in India Begin in Bangalore!</h1>
+        <p class="hero-p">
+          We provide admission support for all colleges in Bangalore and across India.
+Our expert team offers top-notch counseling and mock interviews for Bangalore colleges.
+        </p>
+        <div class="hero-button-container">
+          <a
+            href="https://apps.apple.com/us/app/vpn-us-using-free-vpn-org/id1091634286?ls=1"
+            target="_blank"
+            class="hero-button"
+          >
+            <img
+              src="./images/contactus.png"
+              alt="appstore"
+              class="contactus-img"
+            />
+            Contact Us
+          </a>
+          <a
+            href="https://apps.apple.com/us/app/vpn-us-using-free-vpn-org/id1091634286?ls=1"
+            target="_blank"
+            class="hero-button"
+          >
+            <img src="./images/mocktest.png" alt="appstore" class="mocktest-img" />
+            Mock Interview
+          </a>
+        </div>
+      </div>-->
+    </section>
+
+    <section class="testimonial">
+      <div class="container testimonial-container">
+        <h1 class="testimonial-h1">Campus Tour</h1>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <iframe
+                  id="vaibhawVideo1"
+                  width="100%"
+                  height="250"
+                  src="https://www.youtube.com/embed/ZWO7mqxgh3w?enablejsapi=1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <iframe
+                  id="vaibhawVideo2"
+                  width="100%"
+                  height="250"
+                  src="https://www.youtube.com/embed/2dI2SVEmGjY?enablejsapi=1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <iframe
+                  id="vaibhawVideo3"
+                  width="100%"
+                  height="250"
+                  src="https://www.youtube.com/embed/kTFXWztv_uo?enablejsapi=1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <iframe
+                  id="vaibhawVideo4"
+                  width="100%"
+                  height="250"
+                  src="https://www.youtube.com/embed/uxqjCJBCP_g?enablejsapi=1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <iframe
+                  id="vaibhawVideo5"
+                  width="100%"
+                  height="250"
+                  src="https://www.youtube.com/embed/fIyK0Jf5MEM?enablejsapi=1"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Us -->
+    <section class="contact-us" id="contact-us">
+      <div class="container contact-us-container">
+        <h1 class="contact-us-h1">Contact Us</h1>
+        <p class="contact-us-p">
+          Didn't find an answer to your question? Write to us here and we will
+          get back to you.
+        </p>
+        <div class="contact-us-box-container">
+          <form action="" id="contactform" class="contact-us-form">
+            <div class="contact-us-form-group">
+              <label for="name" class="contact-us-form-label">NAME&#42;</label>
+              <input
+                type="text"
+                required
+                placeholder="Enter your name"
+                class="contact-us-form-input"
+                id="name"
+              />
+            </div>
+            <div class="contact-us-form-group">
+              <label for="email" class="contact-us-form-label"
+                >EMAIL&#42;</label
+              >
+              <input
+                type="email"
+                required
+                placeholder="Enter your email ID"
+                class="contact-us-form-input"
+                id="email"
+              />
+            </div>
+            <div class="contact-us-form-group">
+              <label for="question" class="contact-us-form-label"
+                >YOUR QUESTION&#42;</label
+              >
+              <textarea
+                required
+                placeholder="Enter your question here"
+                class="contact-us-form-input-textarea"
+                id="questions"
+              ></textarea>
+
+              <button class="contact-us-form-button">Submit</button>
+            </div>
+          </form>
+          <div class="contact-us-box">
+            <img
+              src="./images/contactus.png"
+              alt="support"
+              class="contact-us-box-img"
+            />
+            <p class="contact-us-box-p">
+              Our customer support team is available 24 x 7. Please send
+              questions or suggestions to
+            </p>
+            <a href="#" class="contact-us-box-link">support@freevpnusapp.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Download Now -->
+    <!--<section class="download-now" id="download-now">
+      <div class="container download-now-container">
+        <h1 class="download-now-h1">Download This App Today!</h1>
+        <div class="download-now-button-container">
+          <a
+            href="https://apps.apple.com/us/app/vpn-us-using-free-vpn-org/id1091634286?ls=1"
+            target="_blank"
+            class="download-now-button"
+          >
+            <img
+              src="./images/appstore.png"
+              class="download-now-img-app"
+              alt="appstore"
+            /><span>Available on App Store</span>
+          </a>
+          <a
+            href="https://apps.apple.com/us/app/vpn-us-using-free-vpn-org/id1091634286?ls=1"
+            target="_blank"
+            class="download-now-button"
+          >
+            <img
+              src="./images/apple.png"
+              class="download-now-img-mac"
+              alt="apple"
+            /><span>Available on Mac App Store</span>
+          </a>
+        </div>
+      </div>
+    </section>-->
+    
+    <div class="services-container">
+      <div class="services">
+        <h1 class="features-h1">
+          Social Media
+        </h1>
+        <div class="services-box-container">
+          <div class="services-box">
+            <a href="https://www.facebook.com/share/1EWDmuo4AW/?mibextid=wwXIfr">
+              <img src="./images/facebook.png" class="services-icon" alt="facebook" />
+            </a>
+            
+            <p class="services-p">
+              Facebook
+            </p>
+          </div>
+          <div class="services-box">
+            <a href="https://www.instagram.com/edura_education?igsh=MXFiZTk0OTN3YzBqMA%3D%3D&utm_source=qr">
+              <img src="./images/inst.png" class="services-icon" alt="" />
+            </a>
+            <p class="services-p">
+              Instagram
+            </p>
+          </div>
+          <div class="services-box">
+            <a href="https://wa.me/message/DTDURK76HWJXD1?src=qr">
+              <img src="./images/whatsupp.png" class="services-icon" alt="" />
+            </a>
+            <p class="services-p">
+              WhatsApp
+            </p>
+          </div>
+          <div class="services-box">
+            <a href="https://youtube.com/@vaibhawsiddharth?si=unG1Ac7uQ54p3C23">
+              <img src="./images/youtube.png" class="services-icon" alt="" />
+            </a>
+            <p class="services-p">Youtube</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <!-- Footer 
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-box">
+          <div class="footer-text">
+             <img src="./images/logo.png" alt="logo" class="footer-logo" />
+            <p>
+              Copyright &#169; 2024 All right reserved 
+              <!-- | Made with
+              <span>&#10084;</span> by -->
+            </p>
+            <!-- <a href="#">Open VPN LLC</a> -->
+          </div>
+          <!-- <div class="d-block">
+            <br>
+           <a href="./about/" class="footer-link">About</a> | <a class="footer-link" href="./privacy-policy/"> Privacy Policy </a> | <a class="footer-link" href="./terms-of-use/">Terms of Use</a>
+        </div> -->
+          <!-- <div class="footer-links">
+            <a href="#"><img src="./images/fb.png" alt="fb" /></a>
+            <a href="#"><img src="./images/x.png" alt="twitter" /></a>
+            <a href="#"><img src="./images/ig.png" alt="ig" /></a>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+        <!-- Footer Starts -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- About -->
+      <div class="footer-section">
+        <h2>Edura Education</h2>
+        <p>Empowering learners through quality education and digital tools. Learn. Grow. Succeed.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="about/index.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-section">
+        <h3>Locations</h3>
+        <ul>
+          <li><a href="#">Banglore</a></li>
+          <li><a href="#">Pune</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3>Connect with Us</h3>
+        <div class="social-icons">
+          <i class="fa-solid fa-phone-volume fa-beat fa-lg" style="color: #FFD43B;"></i>&nbsp;&nbsp;+91 6209541863
+          <br>
+          <br>
+          <i class="fa-regular fa-envelope fa-beat fa-lg" style="color: #FFD43B;"></i>&nbsp;&nbsp;<a href="https://mail.google.com/mail/?view=cm&fs=1&to=edurasupport@gmail.com" target="_blank">
+            edurasupport@gmail.com
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Edura Education. All rights reserved.
+    </div>
+  </footer>
+    <script>
+      var form = document.querySelector("#contactform");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        sendMail();
+      });
+    </script>
+    <script src="./js/sendMail.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </body>
+</html>
