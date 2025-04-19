@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Listing Page</title>
+    <link rel="stylesheet" href="colleges2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html">
+            <div class="nav-brand">
+                <img src="../images/logo.png" alt="Edura Education" class="brand-logo">
+            </div></a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../about/index.html" class="nav-link">About Us</a>
+                <a href="../faq/faq.html" class="nav-link">FAQ</a>
+                <a href="../colleges/colleges2.html" class="nav-link">Colleges</a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Top 10 Colleges in Bengaluru</h1>
+
+        <div class="college-cards" id="collegeCards">
+            <!-- College cards will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Dialog Box -->
+    <dialog id="counsellingDialog" class="counselling-dialog">
+        <div class="dialog-content">
+            <button class="close-button" onclick="document.getElementById('counsellingDialog').close()">
+                <i data-lucide="x" class="close-icon"></i>
+            </button>
+            <iframe src="https://forms.gle/SZiAu899mBUBQyT1A" frameborder="0" class="form-iframe"></iframe>
+        </div>
+    </dialog>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h2>Edura Education</h2>
+              <p>Empowering learners through quality education and digital tools. Learn. Grow. Succeed.</p>
+            </div>
+            <div class="footer-section">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../colleges/colleges2.html">Colleges</a></li>
+                <li><a href="../about/index.html">About Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Locations</h3>
+              <ul>
+                <li>Bangalore</li>
+                <li>Pune</li>
+                <li>Jamshedpur</li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Connect with Us</h3>
+              <div>
+                <i class="fa-solid fa-phone-volume fa-beat fa-lg" style="color: #FFD43B;"></i>&nbsp;&nbsp;+91 6209541863
+                <br>
+                <br>
+                <i class="fa-regular fa-envelope fa-beat fa-lg" style="color: #FFD43B;"></i>&nbsp;&nbsp;<a href="https://mail.google.com/mail/?view=cm&fs=1&to=edurasupport@gmail.com" target="_blank">
+                  edurasupport@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            © 2025 Edura Education. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    <script src="colleges2.js"></script>
+</body>
+</html>

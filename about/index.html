@@ -5,12 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | Edura Education</title>
   <link rel="stylesheet" href="../css/about.css" />
+  <link rel="stylesheet" href="../colleges/colleges2.css">
 </head>
 <body>
-  <header>
+  <!-- <header>
     <h1>About Edura Education</h1>
-  </header>
+  </header> -->
+  <nav class="navbar">
+    <div class="nav-container">
+        <a href="../index.html">
+        <div class="nav-brand">
+            <img src="../images/logo.png" alt="Edura Education" class="brand-logo">
+        </div></a>
 
+        <div class="nav-menu" id="navMenu">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../about/index.html" class="nav-link">About Us</a>
+            <a href="../faq/faq.html" class="nav-link">FAQ</a>
+            <a href="../colleges/colleges2.html" class="nav-link">Colleges</a>
+        </div>
+
+        <button class="hamburger" id="hamburger">
+            <i data-lucide="menu" class="menu-icon"></i>
+        </button>
+    </div>
+</nav>
+<br><br><br><br>
   <div class="container">
     <div class="about-content">
       <div class="about-text">
@@ -23,7 +43,7 @@
           Whether you're a student preparing for competitive exams or someone looking to upgrade your skills, 
           Edura offers curated content, expert mentorship, and interactive sessions that cater to your goals.
         </p>
-        <a href="../index.html" class="back-btn">← Go Back</a>
+        <button class="back-btn" onclick="goBack()">← Back</button>
       </div>
       <div class="about-image">
         <img src="../images/about.png" alt="Students Learning" />
@@ -34,5 +54,6 @@
   <footer>
     <p>© 2025 Edura Education. All rights reserved.</p>
   </footer>
+  <script src="../js/faq.js"></script>
 </body>
 </html>
