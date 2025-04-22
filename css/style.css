@@ -570,6 +570,25 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .container {
@@ -622,6 +641,21 @@ body {
   .contact-container {
     grid-template-columns: 1fr;
   }
+/* /whatsapp */
+  .whatsapp-float {
+    display: block;
+  }
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @media (max-width: 480px) {
@@ -644,4 +678,8 @@ body {
   .carousel-slide iframe {
     height: 250px;
   }
+}
+/* On hover effect */
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }
